@@ -36,7 +36,7 @@ li {
  レイアウト
 ---------------------------------*/
 .wrapper {
-  padding-top: 73px;
+  padding-top: 70px;
 }
 
 .section {
@@ -57,7 +57,7 @@ li {
  見出し
 ---------------------------------*/
 .title {
-  font-size: 34px;
+  font-size: 40px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
@@ -79,7 +79,7 @@ li {
   z-index: 1;
   width: 100%;
   background-color: #fff;
-  box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+  box-shadow: 0 5px 10px -6px rgba(97, 133, 209, 0.1);
 }
 
 .header .inner {
@@ -98,7 +98,7 @@ li {
 }
 
 .header-logo a {
-  color: #333;
+  color: rgb(51, 51, 51);
 }
 
 .header-nav-list {
@@ -172,11 +172,17 @@ li {
   max-width: 800px;
   margin: 0 auto;
 }
+.main-visual-img2 {
+  width: 50%;
+  
+}
+
 .main-visual-img {
-  width: 20%;
+  width: 30%;
   margin-right: 30px;
   border-radius: 50%;
 }
+
 .main-visual-img img {
   border-radius: 50%;
 }
@@ -211,14 +217,14 @@ li {
   display: inline-block;
   max-width: 180px;
   text-align: center;
-  background-color: #293b6a;
+  background-color: #546fb4;
   font-size: 16px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
   border: 1px dashed #FFF;
-  box-shadow: 0px 0px 0px 2px #293b6a;/* box-shadowで外枠を */
+  box-shadow: 0px 0px 0px 2px #3957a3;/* box-shadowで外枠を */
 }
 
 .btn-denim:hover {
@@ -230,13 +236,13 @@ li {
   max-width: 180px;
   height:50px;
   text-align: center;
-  background-color: #9ec34b;
+  background-color: #283b58;
   font-size: 16px;
   line-height: 52px;
   color: #FFF;
   text-decoration: none;
   font-weight: bold;
-  border: 2px solid #9ec34b;
+  border: 2px solid #283b58;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -255,7 +261,7 @@ li {
   z-index: -1;
 }
 .btn-open:hover{
-  color: #9ec34b;
+  color: #505b5eab;
 }
 .btn-open:hover:after{
   height: 240%;
@@ -271,18 +277,18 @@ li {
   max-width: 180px;
   text-align: center;
   font-size: 16px;
-  color: #9ec34b;
+  color: #06022c;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 16px;
   position: relative;
-  border: 2px solid #9ec34b;
+  border: 2px solid #472b68;
   transition: .4s;
 }
 
 .btn-box:hover {
   border: 2px solid transparent;
-  color: #000;
+  color: rgb(124, 88, 179);
 }
 
 .btn-box:before, .btn-box:after {
@@ -325,7 +331,7 @@ li {
   font-weight: bold;
   padding: 12px 24px;
   border-radius: 4px;
-  background-image: linear-gradient(-90deg, #89eb75, #f1e753);
+  background-image: linear-gradient(-90deg, #35a6f1, #4d3199);
   transition: .5s;
   background-size: 200%;
 }
@@ -335,14 +341,14 @@ li {
 }
 
 /*--------------------------------
- Skill
+ HOBBY
 ---------------------------------*/
-.skill-list {
+/*.skill-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: -50px;
-}
+}*/
 
 .skill-item {
   display: flex;
@@ -353,7 +359,7 @@ li {
 }
 
 .skill-img {
-  width: 60px;
+  width: 120px;
   height: auto;
   margin-right: 20px;
 }
@@ -363,7 +369,7 @@ li {
 }
 
 .skill-name {
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 
 /*--------------------------------
@@ -580,7 +586,7 @@ li {
     margin-bottom: 30px;
   }
 
-  /* Skill */
+  /* hobby */
   .skill-list {
     display: block;
     margin-bottom: 0;
