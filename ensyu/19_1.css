@@ -29,7 +29,7 @@ span{
 .inline-block span {
   display:inline-block;
 }
-none span {
+.none span {
   display: none;
 }
 /*ここまで*/
