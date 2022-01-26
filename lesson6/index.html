@@ -17,85 +17,128 @@
   </head>
   <body>
     <header>
-    （ヘッダー）
-    ロゴ画像
-    #Cornetto
+    <h1>
+      <img src="img/logo.svg" alt="Cornetto">
+    </h1>
     </header>
     
     <!-- <main>の中身をマークアップ -->
     <main>
     <figure>
-    （メインイメージ）
-    [写真]
-    Cornettoのパン
+  <img src="img/top.jpg" alt="Cornettoのパン" >
     </figure>
     
     <nav>
-    （ナビゲーション）
-    *about（リンク先：#about）
-    *menu（リンク先：#menu）
-    *photos（リンク先：#photos）
-    *access（リンク先：#access）
+    <ul>
+      <li><a href="#about">about</a></li>
+      <li><a href="#menu">menu</a></li>
+      <li><a href="#photos">photos</a></li>
+      <li><a href="#access">access</a></li>
+    </ul>
     </nav>
     
-    <section>
-    （アバウト）
-    #about
-    Cornettoは東京都中区にあるパン屋です。
-    自家製酵母を使ったふわふわサクサクのクロワッサンが大人気。
-    その他ベーグル、ピザパンなど
-    数多くのパンをご用意しております。
-    ぜひご賞味ください。
+    <section class="section about" id="about">
+      <h2 class="heading">
+        <img src="img/ttl_about.svg" alt="about">
+      </h2>
+    <p>Cornettoは東京都中区にあるパン屋です。<br>
+    自家製酵母を使ったふわふわサクサクのクロワッサンが大人気。<br>
+    その他ベーグル、ピザパンなど<br>
+    数多くのパンをご用意しております。<br>
+    ぜひご賞味ください。</p>
     </section>
     
-    <section>
-    （メニュー）
-    #menu
-    ・クロワッサン・・・ 140円
-    ・ベーグル・・・ 180円
-    ・ピザパン・・・ 180円
-    ・あんぱん・・・ 150円
-    ・食パン・・・ 450円
+    <section class="section menu" id="menu">
+      <h2 class="heading">
+        <img src="img/ttl_menu.svg" alt="menu">
+      </h2>
+      <ul class="menu-list">
+        <li>クロワッサン・・・ 140円</li>
+        <li>ベーグル・・・ 180円</li>
+        <li>ピザパン・・・ 180円</li>
+        <li>あんぱん・・・ 150円</li>
+        <li>食パン・・・ 450円</li>
+      </ul>
     </section>
     
-    <section>
-    （フォト）
-    #photos
+    <section class="section photos" id="photos">
+    <h2 class="heading">
+      <img src="img/ttl_photos.svg" alt="photos">
+    </h2>
+    <ul class="photos-list">
+      <li>
+        <figure>
+          <img src="img/photos_01.jpg" alt="ゆとりある朝食画像">
+          <figcaption>休日の朝には、いつもよりじっくりと選んだパンを食卓に並べてゆとりある朝食をいただきたいものです。</figcaption>
+        </figure>
+      </li>
+    </ul>
     
-    （ゆとりある朝食画像）
-    休日の朝には、いつもよりじっくりと選んだパンを食卓に並べてゆとりある朝食をいただきたいものです。
+    <ul>
+      <li>
+        <figure>
+          <img src="img/photos_02.jpg" alt="季節のピザパン画像">
+          <figcaption>当店人気の”季節のピザパン”。夏の人気メニューはズッキーニとパプリカです。</figcaption>
+        </figure>
+      </li>
+    </ul>
     
-    （季節のピザパン画像）
-    当店人気の”季節のピザパン”。夏の人気メニューはズッキーニとパプリカです。
-    
-    （ハードパンやベーグル画像）
-    調理パンだけでなく、ハードパンやベーグルも当店の看板商品です。
+    <ul>
+      <li>
+        <figure>
+          <img src="img/photos_03.jpg" alt="ハードパンやベーグル画像">
+          <figcaption>調理パンだけでなく、ハードパンやベーグルも当店の看板商品です。</figcaption>
+        </figure>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <figure>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0xnHXUySSMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </figure>
+      </li>
+    </ul>
     </section>
     
-    <section>
-    （アクセス）
-    #access
-    Bakery shop Cornetto
-    〒123-4567
-    東京都中区舟入中町4-40
-    TEL・FAX 012-345-6789
+    <section class="section access"  id="access">
+      <h2>
+        <img src="img/ttl_access.svg" alt="access">
+      </h2>
+      <div class="access-row">
+        <address class="access-address" >
+          <strong>Bakery shop Cornetto</strong><br>
+          〒123-4567<br>
+          東京都中区舟入中町4-40<br>
+          <strong>TEL・FAX 012-345-6789</strong>
+        </address>
+        <figure class="access-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11661.23687994097!2d141.37091329632779!3d43.05596366797272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2bd6e30a2985%3A0x5398ede5382c8a3c!2z5a2m5qCh5rOV5Lq66Zu75a2Q6ZaL55m65a2m5ZySIOWMl-a1t-mBk-aDheWgseWwgumWgOWtpuagoQ!5e0!3m2!1sja!2sjp!4v1643158614333!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </figure>
+      </div>
     
-    （店舗地図画像）
-    店舗周辺地図
     </section>
     </main>
     
-    <footer>
-    （フッター）
-    ロゴ画像
-    
-    （フッターナビゲーション）
-    *about（リンク先：#about）
-    *menu（リンク先：#menu）
-    *photos（リンク先：#photos）
-    *access（リンク先：#access）
-    
-    &copy;Copyright 2019 MdN Corporation.
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-logo"><img src="img/logo_w.svg" alt="Cornetto"></p>
+        <div class="footer-body">
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li><a href="#about">about</a></li>
+            <li><a href="#menu">menu</a></li>
+            <li><a href="#photos">photos</a></li>
+            <li><a href="#access">access</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+<div id="page_top"><a href="#"></a></div>
+
+
+
     </footer>
   </body>
 </html>
