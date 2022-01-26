@@ -38,7 +38,7 @@ input[type="text"],textarea{
     padding: 10px;
     border-radius: 5px;
 }
-.job{margin-right: .8em;}
+.job{margin-right:.8em;}
 select{
     background: #fff;
     width: 100%;

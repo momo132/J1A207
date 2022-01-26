@@ -20,7 +20,7 @@ p::before {
   margin-right: 4px;
   color: #ef626c;
 }
-input[type="text"],section,textarea{
+input[type="text"],select,textarea{
   background: #fff;
   border: none;
   width: 100%;
