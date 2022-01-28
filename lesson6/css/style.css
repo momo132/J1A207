@@ -236,39 +236,50 @@ font-size: 12px;
 /* ここから追加課題用の設定 */
 
 /* YouTube・Google MAPのサイズ */
-
+figure iframe{
+  width: 100%;
+}
 /* トップ画像をスライド */
-
+.slide {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.slide img{
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+@keyframes slide-4{
+0% {margin-left: 0;}
+33% {margin-left: -100%;}
+66% {margin-left: -200%;}
+100% {margin-left: -300%;}
+}
+.slide > :first-child {
+  animation-name: slide-4;
+  animation-duration:40s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
 /* トップに戻るボタンを右下に固定 */
-#page_top{
-  width: 50px;
-  height: 50px;
+.pagetop{
   position: fixed;
-  right: 0;
-  bottom: 0;
-  background: #3f98ef;
-  opacity: 0.6;
+  right: 20px;
+  bottom: 20px;
 }
-#page_top a{
-  position: relative;
-  display: block;
-  width: 50px;
-  height: 50px;
-  text-decoration: none;
+.menu-list li {
+  list-style: none;
 }
-#page_top a::before{
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f102';
-  font-size: 25px;
-  color: #fff;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  text-align: center;
+.menu-list li::before{
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-image: url(../img/menu_li.png);
+  background-size: contain;
+  vertical-align: middle;
 }
